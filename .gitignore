@@ -1,0 +1,35 @@
+# Maven build output
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Java
+*.class
+*.log
+hs_err_pid*
+replay_pid*
+
+# IDEs
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.factorypath
+bin/
+
+# Environment files and secrets (never commit credentials)
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Claude Code local settings
+.claude/settings.local.json

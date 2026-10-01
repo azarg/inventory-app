@@ -1,0 +1,23 @@
+{
+  "name": "Java 21 & Maven Dev Environment",
+  "image": "mcr.microsoft.com/devcontainers/java:21",
+  "features": {
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "none",
+      "installMaven": "true",
+      "installGradle": "false"
+    }
+  },
+  "mounts": [
+    "source=maven-m2-cache,target=/home/vscode/.m2,type=volume"
+  ],
+  "postCreateCommand": "sudo chown -R vscode:vscode /home/vscode/.m2",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "vscjava.vscode-java-pack"
+      ]
+    }
+  },
+  "remoteUser": "vscode"
+}
